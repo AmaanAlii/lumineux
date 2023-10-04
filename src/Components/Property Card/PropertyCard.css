@@ -1,0 +1,206 @@
+.property-card-section {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 360px;
+  height: 460px;
+
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+
+  font-family: Bank-Gothic;
+  color: var(--white-200, #dcdcdc);
+
+  position: relative;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.property-card-section:hover {
+  background: radial-gradient(
+    231% 135.8% at 0.9% 2.98%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(25px);
+}
+
+.property-card-section > span {
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  left: 0;
+
+  color: black;
+  font-family: Bank-Gothic;
+  font-weight: bold;
+  font-size: 14px;
+
+  padding: 6px 20px 10px 20px;
+  border-radius: 20px 0px;
+  background: linear-gradient(
+    108deg,
+    #be9118 -99.94%,
+    #efd84e -91.38%,
+    #be9218 -69.13%,
+    #f4de53 -36.61%,
+    #d4b030 -0.67%,
+    #dfc03c 21.58%,
+    #c0941a 50.67%,
+    #c49a1e 50.71%,
+    #b48f25 83.19%,
+    #c89f23 119.13%,
+    #ae9449 165.34%,
+    #bf9319 226.96%
+  );
+}
+
+.property-card-top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image-container {
+  position: relative;
+}
+
+.property-card-top-section > .card-image-container > img {
+  width: 360px;
+  height: 200px;
+
+  border: none;
+  border-radius: 20px;
+}
+
+.card-sales-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  font-size: 12px;
+
+  border-radius: 5px;
+  border: 1px solid #fff;
+  opacity: 0.6;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    #3d3d3d;
+
+  padding: 5px;
+}
+
+.property-card-section .card-details-section {
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 5px;
+
+  padding-top: 10px;
+}
+
+.property-card-section .card-details-section > h3 {
+  margin: 0px;
+}
+
+.property-card-section .card-details-section > span {
+  font-size: 12px;
+  color: var(--white-100, #efefef);
+}
+
+.property-card-section .card-details-section > span > button {
+  border: none;
+  background-color: transparent;
+  padding: 0px;
+
+  font-family: Bank-Gothic;
+  color: var(--tree-poppy-300, #f9b550);
+}
+
+.property-card-top-section .card-details-subgroup {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+
+  gap: 20px;
+
+  border-bottom: 1px solid #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.property-card-top-section .card-details-subgroup > .card-property-detail {
+  display: flex;
+  gap: 5px;
+
+  justify-content: center;
+  align-items: center;
+
+  width: max-content;
+
+  font-size: 14px;
+}
+
+.property-card-top-section
+  .card-details-subgroup
+  > .card-property-detail-1
+  > .card-property-detail-address {
+  font-size: 10px;
+  text-align: justify;
+  width: fit-content;
+}
+
+.property-card-section .card-contact-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 20px;
+}
+
+.property-card-section .card-contact-section .card-contact-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  font-size: 14px;
+}
+
+.property-card-section .card-contact-section .card-contact-left > img {
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.property-card-section .card-contact-section .card-contact-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.property-card-section .card-contact-section .card-contact-right > div {
+  width: 30px;
+  height: auto;
+  padding: 2px;
+  border-radius: 5px;
+  background: #251b18;
+}

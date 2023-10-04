@@ -1,0 +1,145 @@
+.underline {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 0; /* Initial width is 0 */
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.5s ease-in-out, left 0.5s ease-in-out,
+    right 0.5s ease-in-out; /* Transition width and left properties */
+}
+.active-link {
+  text-decoration: none;
+
+  color: #fff;
+
+  /* border-bottom: 1px solid #fff; */
+
+  padding-bottom: 2px;
+
+  transition: all 1s ease-in-out;
+}
+
+.inactive-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-component {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  position: fixed;
+  top: 5%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  width: 100%;
+
+  color: white;
+
+  font-family: Bank-Gothic;
+  font-style: bold;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 50%;
+
+  list-style: none;
+}
+
+.nav-menu-list img {
+  width: 60px;
+  height: 60px;
+
+  transition: all 0.3s ease-in-out;
+}
+.nav-logo-container {
+  position: absolute;
+  top: 0;
+  right: 44%;
+
+  width: 80px;
+  height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-component > a > img {
+  width: 150px;
+}
+
+.navbar-component button {
+  padding: 10px;
+
+  border: none;
+
+  font-family: Bank-Gothic;
+  font-style: bold;
+
+  border-radius: 8px;
+  background: linear-gradient(
+      0deg,
+      rgba(129, 111, 19, 0.2) 0%,
+      rgba(129, 111, 19, 0.2) 100%
+    ),
+    linear-gradient(
+      105deg,
+      #be9118 -68.66%,
+      #efd84e -58.98%,
+      #be9218 -33.82%,
+      #f4de53 2.95%,
+      #d4b030 43.59%,
+      #dfc03c 68.74%,
+      #c0941a 101.64%,
+      #c49a1e 101.68%,
+      #b48f25 138.41%,
+      #c89f23 179.05%,
+      #ae9449 231.3%,
+      #bf9319 300.97%
+    );
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.05) inset;
+}
+
+.navbar-component button a {
+  text-decoration: none;
+
+  font-family: Bank-Gothic;
+  font-weight: bold;
+}
+
+.notTransparent {
+  background: var(--bg4, linear-gradient(54deg, #3d3d3d -9.12%, #000 108.91%));
+
+  display: flex;
+  width: 99%;
+  margin-left: 0.5%;
+
+  border-radius: 5px;
+
+  top: 0;
+}
+
+.notTransparent .nav-logo-container {
+  background-color: #ffffff;
+  border: none;
+
+  border-radius: 70px;
+  padding: 5px;
+}
+
+.transparent {
+  background-color: transparent !important;
+}
